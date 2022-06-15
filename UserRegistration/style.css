@@ -38,6 +38,7 @@ body{
     height: 3.5vw;
     background: #079FD0;
     border-radius: 10px;
+    border: none;
 
     font-family: 'Montserrat';
     font-style: normal;

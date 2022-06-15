@@ -20,9 +20,9 @@ module.exports = function (roles) {
                     hasRole = true
                 }
             })
-            if (!hasRole) {
+            /*if (!hasRole) {
                 return res.status(403).json({message: "Access is forbidden"})
-            }
+            }*/
             next();
         } catch (e) {
             console.log(e)

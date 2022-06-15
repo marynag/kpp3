@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>KPP3</title>
+	<link rel="stylesheet" href="">
+	<script src="vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header >
+        <div class="menu">     
+            <img class="logo" src="img/logo.jpg" alt="logo"/>
+            <nav class="navigation">
+                <a href="#" class="link">about us</a>
+                <a href="#" class="link">robots</a>
+                <a href="#" class="link">certificates</a>
+                <a href="#" class="link">contacts</a>        
+            </nav>
+            <a href="order.html" class="link_page"><button class="header_button" v-bind:disabled="isButtonDisabled">order now</button></a>
+        </div>  
+   
+   
+        <div class="boxes">
+            <div class="grey_box"></div>
+            <img class="main_pic" src="img/courier.jpg" alt="photo"/>
+            <p class="ebo">Glovo</p>
+            <p class="best">Best delivery for your food</p>
+            <p class="love">love care <br />and always <br />be with your food</p>
+        </div>
+
+
+        <div id="app">
+          <h1>{{ product }}</h1>
+      </div>
+      
+      <p id="l">{{message}}</p>
+      
+       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+       <script src="index.js"  ></script>
+       
+
+
+<script>
+
+var variable_name = new Vue({
+  el: '#app',
+  data: {
+    product: 'Hello word'
+  } 
+})
+
+var y = new Vue({
+  el: '#l',
+  data: {
+    message: 'Hi'
+  } 
+})
+
+</script>
+</body>
+</html>
